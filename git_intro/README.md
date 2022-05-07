@@ -2,22 +2,27 @@
 
 ![Final doc!](https://phdcomics.com/comics/archive/phd101212s.gif "My git notes")
 
-[A Quick Introduction to Version Control with Git and GitHub](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004668)
+- [A Quick Introduction to Version Control with Git and GitHub](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004668)
 
-[git_4_sci](https://milesmcbain.github.io/git_4_sci/index.html)
+- [git_4_sci](https://milesmcbain.github.io/git_4_sci/index.html)
 
-## git and jupyter
+## git and jupyter (data science)
 
-https://jupytext.readthedocs.io/en/latest/index.html
-https://medium.com/capital-fund-management/automated-reports-with-jupyter-notebooks-using-jupytext-and-papermill-619e60c37330
-https://www.reviewnb.com
-https://blog.reviewnb.com/github-jupyter-notebook/
+- https://jupytext.readthedocs.io/en/latest/index.html
 
-## Good git tutorial
+- https://medium.com/capital-fund-management/automated-reports-with-jupyter-notebooks-using-jupytext-and-papermill-619e60c37330
 
-https://www.git-scm.com/book
-https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud
-https://swcarpentry.github.io/git-novice/
+- https://www.reviewnb.com
+
+- https://blog.reviewnb.com/github-jupyter-notebook/
+
+## Very useful git tutorial
+
+- https://www.git-scm.com/book
+
+- https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud
+
+- https://swcarpentry.github.io/git-novice/
 
 ## Setting up git
 

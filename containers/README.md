@@ -1,8 +1,12 @@
 ## What is a container?
 
-[OS-level virtualization](https://en.wikipedia.org/wiki/OS-level_virtualization)
+In short, a container is a lightweight Linux kernel plus some other stuffs (packages, libraries, executables, etc) that performs a specific task(s). Containers are created to make maintaining and running software easier, but could be also used to make scientific research reproducible.
 
-### From enterprise viewpoint
+For an in-depth explanation see: 
+
+[OS-level virtualization](https://en.wikipedia.org/wiki/OS-level_virtualization).
+
+For some enterprise viewpoints see:
 
 [Docker](https://www.docker.com/resources/what-container/)
 [IBM](https://www.ibm.com/cloud/learn/containers)

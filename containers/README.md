@@ -9,8 +9,11 @@ For an in-depth explanation see:
 For some enterprise viewpoints see:
 
 [Docker](https://www.docker.com/resources/what-container/)
-[IBM](https://www.ibm.com/cloud/learn/containers)
+
+[IBM](https://www.ibm.com/cloud/blog/containers-vs-vms)
+
 [Microsoft](https://azure.microsoft.com/en-us/overview/what-is-a-container/)
+
 [Redhat](https://www.redhat.com/en/topics/containers)
 
 ## Installing docker

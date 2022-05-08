@@ -15,7 +15,7 @@ For some enterprise viewpoints see:
 
 ## Installing docker
 
-### Going around the blocking of Iran's IP
+### Going around blocking of Iran's IP
 
 Unfortunately docker restricts its service for Iran. So you need a workaround. You can use VPN or some other services like [Shekan](https://shecan.ir/) to install docker and use [dockerhub](https://hub.docker.com/). For more information, see [its FAQ](https://shecan.ir/faq/).
 

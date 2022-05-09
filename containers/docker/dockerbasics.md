@@ -13,7 +13,7 @@ Prerequisites
 To check if the installation was successful, open up your favorite
 Terminal (Mac,Linux) or the Docker Terminal (Windows) and try running
 
-```sh
+```console
 $ docker version
 Client: Docker Engine - Community
  Version:           20.10.12
@@ -55,7 +55,7 @@ Having a Docker Hub account makes it easier to share your containers
 with other researchers. Use the Docker CLI to login to Docker Hub to be
 able to push images to your repository:
 
-```sh
+```console
 $ docker login
 (Enter username/password)
 ```
@@ -80,7 +80,7 @@ peaks into the Docker daemon, which is shared by all users on this
 system, to see which images are available, when they were created, and
 how large they are:
 
-```sh
+```console
 $ docker images
 REPOSITORY           TAG                 IMAGE ID       CREATED        SIZE
 ubuntu               18.04               6ad7e71ba7d    2 days ago     63.2MB
@@ -91,7 +91,7 @@ Pull an image from Docker hub with the `docker pull` command. This looks
 through the Docker Hub registry and downloads the \'latest\' version of
 that image:
 
-```sh
+```console
 $ docker pull hello-world
 Using default tag: latest
 latest: Pulling from library/hello-world
@@ -106,7 +106,7 @@ case, running the container will execute a simple shell script inside
 the container that has been configured as the \'default command\' when
 the image was built:
 
-```sh
+```console
 $ docker run hello-world
 
 Hello from Docker!
@@ -134,7 +134,7 @@ For more examples and ideas, visit:
 Verify that the image you just pulled is now available on your local
 machine:
 
-```sh
+```console
 $ docker images
 REPOSITORY           TAG                 IMAGE ID       CREATED        SIZE
 ubuntu               18.04               6ad7e71ba7d    2 days ago     63.2MB
@@ -143,7 +143,7 @@ hello-world          latest              feb5d9fea6a5   7 months ago   13.3kB
 
 Check to see if any containers are still running using `docker ps`:
 
-```sh
+```console
 [isp02]$ docker ps
 CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 ```
@@ -159,7 +159,7 @@ containers, not just currently running containers.
 Closely inspect metadata for your downloaded image(s) using the
 `docker inspect` command:
 
-```sh
+```console
 $ docker inspect hello-world
 [
     {
@@ -191,12 +191,12 @@ $ docker inspect hello-world
 
 The command line tools are very well documented:
 
-```sh
+```console
 $ docker --help
 shows all docker options and summaries
 ```
 
-```sh
+```console
 $ docker COMMAND --help
 shows options and summaries for a particular command
 ```

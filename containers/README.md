@@ -22,8 +22,7 @@ of a hypervisor (high overhead). Multiple VMs can run on the same
 physical infrastructure - from a few to dozens depending on resources.
 VMs take up more disk space and have long start up times (\~minutes).
 
-![Applications isolated by VMs.](images/arch_vm.png){.align-center
-width="400px"}
+![Applications isolated by VMs.](images/arch_vm.png)
 
 Containers enable application and resource isolation, run on top of the
 host operating system. Many containers can run on the same physical
@@ -32,7 +31,7 @@ less disk space than VMs and have very short start up times (\~100s of
 ms).
 
 ![Applications isolated by
-containers.](images/arch_container.png){.align-center width="400px"}
+containers.](images/arch_container.png)
 
 For an in-depth explanation see: 
 
@@ -54,8 +53,7 @@ Container Technologies
 
 ### Docker
 
-![](images/docker_logo.jpg){.leftalign-right width="200px"
-height="180px"}
+![](images/docker_logo.jpg)
 
 Docker is a containerization platform that uses OS-level virtualization
 to package software and dependencies in deliverable units called

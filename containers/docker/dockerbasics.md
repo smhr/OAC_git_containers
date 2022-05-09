@@ -13,7 +13,7 @@ Prerequisites
 To check if the installation was successful, open up your favorite
 Terminal (Mac,Linux) or the Docker Terminal (Windows) and try running
 
-```console
+```bash
 sudo docker version
 ```
 ```console
@@ -64,7 +64,7 @@ sudo docker login
 (Enter username/password)
 ```
 
-### EXERCISE
+#### Exercise
 
 While everyone gets set up, take a few minutes to run `docker --help`
 and a few examples of `docker <verb> --help` to make sure you can find
@@ -161,13 +161,13 @@ sudo docker ps
 CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 ```
 
-### EXERCISE
+#### Exercise
 
 The command `docker ps` shows only currently running containers. Pull up
 the help text for that command and figure out how to show all
 containers, not just currently running containers.
 
-### EXERCISE
+#### Exercise
 
 Closely inspect metadata for your downloaded image(s) using the
 `docker inspect` command:

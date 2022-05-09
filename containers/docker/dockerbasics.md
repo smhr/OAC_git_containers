@@ -171,35 +171,21 @@ $ docker inspect hello-world
 
 #### Docker Core Commands
 
------------------------------------------------------------------
-  Command          Usage
----------------- ------------------------------------------------
-  docker login     Authenticate to Docker Hub using username and
-                   password
+| Command        | Usage                                                        |
+| -------------- | ------------------------------------------------------------ |
+| docker login   | Authenticate to Docker Hub using username and  password      |
+| docker images  | List images on the local machine                             |
+| docker ps      | List containers on the local machine                         |
+| docker pull    | Download an image from Docker Hub                            |
+| docker run     | Run an instance of an image (a container)                    |
+| docker inspect | Provide detailed information on Docker objects               |
+| docker rmi     | Delete an image                                              |
+| docker rm      | Delete a container                                           |
+| docker stop    | Stop a container                                             |
+| docker build   | Build a docker image from a Dockerfile in the  current working directory |
+| docker tag     | Add a new tag to an image                                    |
+| docker push    | Upload an image to Docker Hub                                |
 
-  docker images    List images on the local machine
-
-  docker ps        List containers on the local machine
-
-  docker pull      Download an image from Docker Hub
-
-  docker run       Run an instance of an image (a container)
-
-  docker inspect   Provide detailed information on Docker objects
-
-  docker rmi       Delete an image
-
-  docker rm        Delete a container
-
-  docker stop      Stop a container
-
-  docker build     Build a docker image from a Dockerfile in the
-                   current working directory
-
-  docker tag       Add a new tag to an image
-
-  docker push      Upload an image to Docker Hub
-  -----------------------------------------------------------------
 
 #### Additional Resources
 
@@ -216,3 +202,4 @@ shows options and summaries for a particular command
 ```
 
 -   [Official Docker Documentation](https://docs.docker.com/get-started/)
+

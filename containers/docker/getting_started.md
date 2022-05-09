@@ -1,10 +1,10 @@
-Docker hands-on
+Getting started with docker
 ===========================
 
 Let’s create our first container from an existing image. We do this with the image `ubuntu`, generating an environment with a minimal installation of ubuntu. We first pull it:
 
 ```sh
-sudo docker pull ubuntu
+docker pull ubuntu
 ```
 ```console
 Using default tag: latest
@@ -18,19 +18,17 @@ docker.io/library/ubuntu:latest
 Now, we request an interactive shell into the created container:
 
 ```sh
-sudo docker run -it ubuntu
+docker run -it ubuntu
 ```
 
 This interactivity was invoked by the options `-i` and `-t`).
 
-#### Question
-
-Check out the operating system of the container by typing `cat /etc/os-release` in the container’s shell. Are we really in an ubuntu environment? Run the command `whoami` in the docker container. Who are you?
+**Question:** Check out the operating system of the container by typing `cat /etc/os-release` in the container’s shell. Are we really in an ubuntu environment? Run the command `whoami` in the docker container. Who are you?
 
 List all containers:
 
 ```sh
-sudo docker container ls -a
+docker container ls -a
 ```
 
 Now let's install some software in our `ubuntu` environment. We'll install some simple software called [`figlet`](http://www.figlet.org/). Type into the container shell:

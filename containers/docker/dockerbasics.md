@@ -14,7 +14,7 @@ To check if the installation was successful, open up your favorite
 Terminal (Mac,Linux) or the Docker Terminal (Windows) and try running
 
 ```bash
-sudo docker version
+docker version
 ```
 ```console
 Client: Docker Engine - Community
@@ -58,15 +58,13 @@ with other researchers. Use the Docker CLI to login to Docker Hub to be
 able to push images to your repository:
 
 ```bash
-sudo docker login
+docker login
 ```
 ```console
 (Enter username/password)
 ```
 
-#### Exercise
-
-While everyone gets set up, take a few minutes to run `docker --help`
+**Exercise:** While everyone gets set up, take a few minutes to run `docker --help`
 and a few examples of `docker <verb> --help` to make sure you can find
 and read the help text.
 
@@ -85,20 +83,20 @@ system, to see which images are available, when they were created, and
 how large they are:
 
 ```bash
-sudo docker images
+docker images
 ```
 ```console
 REPOSITORY           TAG                 IMAGE ID       CREATED        SIZE
 ubuntu               18.04               6ad7e71ba7d    2 days ago     63.2MB
 ```
-**Note**: If this is your first time using Docker, you may not have any images stored on your local machine.
+**Note:** If this is your first time using Docker, you may not have any images stored on your local machine.
 
 Pull an image from Docker hub with the `docker pull` command. This looks
 through the Docker Hub registry and downloads the \'latest\' version of
 that image:
 
 ```bash
-sudo docker pull hello-world
+docker pull hello-world
 ```
 ```console
 Using default tag: latest
@@ -115,7 +113,7 @@ the container that has been configured as the \'default command\' when
 the image was built:
 
 ```bash
-sudo docker run hello-world
+docker run hello-world
 ```
 ```console
 Hello from Docker!
@@ -131,7 +129,7 @@ To generate this message, Docker took the following steps:
     to your terminal.
 
 To try something more ambitious, you can run an Ubuntu container with:
- sudo docker run -it ubuntu bash
+ docker run -it ubuntu bash
 
 Share images, automate workflows, and more with a free Docker ID:
  https://hub.docker.com/
@@ -144,7 +142,7 @@ Verify that the image you just pulled is now available on your local
 machine:
 
 ```bash
-sudo docker images
+docker images
 ```
 ```console
 REPOSITORY           TAG                 IMAGE ID       CREATED        SIZE
@@ -155,25 +153,21 @@ hello-world          latest              feb5d9fea6a5   7 months ago   13.3kB
 Check to see if any containers are still running using `docker ps`:
 
 ```bash
-sudo docker ps
+docker ps
 ```
 ```console
 CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 ```
 
-#### Exercise
-
-The command `docker ps` shows only currently running containers. Pull up
+**Exercise:** The command `docker ps` shows only currently running containers. Pull up
 the help text for that command and figure out how to show all
 containers, not just currently running containers.
 
-#### Exercise
-
-Closely inspect metadata for your downloaded image(s) using the
+**Exercise:** Closely inspect metadata for your downloaded image(s) using the
 `docker inspect` command:
 
 ```bash
-sudo docker inspect hello-world
+docker inspect hello-world
 ```
 ```console
 [
@@ -207,14 +201,14 @@ sudo docker inspect hello-world
 The command line tools are very well documented:
 
 ```bash
-sudo docker --help
+docker --help
 ```
 ```console
 shows all docker options and summaries
 ```
 
 ```bash
-sudo docker COMMAND --help
+docker COMMAND --help
 ```
 ```console
 shows options and summaries for a particular command

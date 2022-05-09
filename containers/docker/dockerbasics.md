@@ -14,7 +14,7 @@ To check if the installation was successful, open up your favorite
 Terminal (Mac,Linux) or the Docker Terminal (Windows) and try running
 
 ```console
-$ docker version
+sudo docker version
 Client: Docker Engine - Community
  Version:           20.10.12
  API version:       1.41
@@ -56,7 +56,7 @@ with other researchers. Use the Docker CLI to login to Docker Hub to be
 able to push images to your repository:
 
 ```console
-$ docker login
+sudo docker login
 (Enter username/password)
 ```
 
@@ -81,7 +81,7 @@ system, to see which images are available, when they were created, and
 how large they are:
 
 ```console
-$ docker images
+sudo docker images
 REPOSITORY           TAG                 IMAGE ID       CREATED        SIZE
 ubuntu               18.04               6ad7e71ba7d    2 days ago     63.2MB
 ```
@@ -92,7 +92,7 @@ through the Docker Hub registry and downloads the \'latest\' version of
 that image:
 
 ```console
-$ docker pull hello-world
+sudo docker pull hello-world
 Using default tag: latest
 latest: Pulling from library/hello-world
 2db29710123e: Pull complete
@@ -107,7 +107,7 @@ the container that has been configured as the \'default command\' when
 the image was built:
 
 ```console
-$ docker run hello-world
+sudo docker run hello-world
 
 Hello from Docker!
 This message shows that your installation appears to be working correctly.
@@ -122,7 +122,7 @@ To generate this message, Docker took the following steps:
     to your terminal.
 
 To try something more ambitious, you can run an Ubuntu container with:
- $ docker run -it ubuntu bash
+ sudo docker run -it ubuntu bash
 
 Share images, automate workflows, and more with a free Docker ID:
  https://hub.docker.com/
@@ -135,7 +135,7 @@ Verify that the image you just pulled is now available on your local
 machine:
 
 ```console
-$ docker images
+sudo docker images
 REPOSITORY           TAG                 IMAGE ID       CREATED        SIZE
 ubuntu               18.04               6ad7e71ba7d    2 days ago     63.2MB
 hello-world          latest              feb5d9fea6a5   7 months ago   13.3kB
@@ -144,7 +144,7 @@ hello-world          latest              feb5d9fea6a5   7 months ago   13.3kB
 Check to see if any containers are still running using `docker ps`:
 
 ```console
-[isp02]$ docker ps
+[isp02]sudo docker ps
 CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 ```
 
@@ -160,7 +160,7 @@ Closely inspect metadata for your downloaded image(s) using the
 `docker inspect` command:
 
 ```console
-$ docker inspect hello-world
+sudo docker inspect hello-world
 [
     {
         "Id": "sha256:feb5d9fea6a5e9606aa995e879d862b825965ba48de054caab5ef356dc6b3412",
@@ -192,12 +192,12 @@ $ docker inspect hello-world
 The command line tools are very well documented:
 
 ```console
-$ docker --help
+sudo docker --help
 shows all docker options and summaries
 ```
 
 ```console
-$ docker COMMAND --help
+sudo docker COMMAND --help
 shows options and summaries for a particular command
 ```
 

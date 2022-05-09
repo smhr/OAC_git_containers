@@ -30,7 +30,7 @@ Check out the operating system of the container by typing `cat /etc/os-release` 
 List all containers:
 
 ```sh
-docker container ls -a
+sudo docker container ls -a
 ```
 
 Now let's install some software in our `ubuntu` environment. We'll install some simple software called [`figlet`](http://www.figlet.org/). Type into the container shell:

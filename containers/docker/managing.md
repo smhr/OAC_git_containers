@@ -25,7 +25,7 @@ docker attach [CONTAINER NAME]
 
 And you're back in the container shell.
 
-### Note `docker attach` and `docker exec`
+**Note:** `docker attach` and `docker exec`
 
 In addition to `docker attach`, you can also "re-attach" a container with `docker exec`. However, these two are quite different. While `docker attach` gets you back to your stopped shell process, `docker exec` creates a new one (more information on [stackoverflow](https://stackoverflow.com/questions/30960686/difference-between-docker-attach-and-docker-exec)). The command `docker exec` enables you to have multiple shells open in the same container. That can be convenient if you have one shell open with a program running in the foreground, and another one for e.g. monitoring. 
 
@@ -91,7 +91,7 @@ Running `docker image inspect ubuntu` gives (among other information):
            "CMD [\"/bin/bash\"]"
        ],
 ```
-    
+
 The first part in the list following `"Cmd":` is the shell in which the command is executed (`/bin/sh -c`; i.e. *Bourne shell*), the second part, following `CMD`, is the default command. In the case of the ubuntu image this is `/bin/bash`, returning a shell in `bash` (i.e. *Bourne again shell* in stead of `sh`). Adding the options `-i` and `-t` (`-it`) to your `docker run` command will therefore result in an interactive `bash` shell. You can modify this default behaviour.
 
 ### Removing containers

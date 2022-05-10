@@ -1,5 +1,5 @@
-Getting Started With Docker
-===========================
+Basics
+======
 
 Prerequisites
 -------------

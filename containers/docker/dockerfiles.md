@@ -8,7 +8,7 @@ To make your images shareable and adjustable, it's good practice to work with a 
 You can generate an image from a `Dockerfile` using the command `docker build`. A `Dockerfile` has its own syntax for giving instructions. Luckily, they are rather simple. The script always contains a line starting with `FROM` that takes the image name from which the new image will be built. After that you usually want to run some commands to e.g. configure and/or install software. The instruction to run these commands during building starts with `RUN`.  In our `figlet` example that would be:
 
 ```dockerfile
-FROM ubuntu
+FROM ubuntu:20.04
 RUN apt-get update
 RUN apt-get install figlet
 ```
@@ -18,10 +18,10 @@ RUN apt-get install figlet
 We can install updates, install new software, or download code to our image by running commands with the RUN instruction. Each RUN instruction creates an intermediate image (called a ‘layer’). Too many layers makes the Docker image less performant, and makes building less efficient. 
 
 **Note:** On writing reproducible `Dockerfiles`
-At the `FROM` statement in the the above `Dockerfile` you see that we have added a specific tag to the image (i.e. `focal-20210401`). We could also have written:
+At the `FROM` statement in the the above `Dockerfile` you see that we have added a specific tag to the image (i.e. `20.04`). We could also have written:
 
 ```dockerfile
-FROM ubuntu
+FROM ubuntu:20.04
 RUN apt-get update
 RUN apt-get install figlet
 ```
@@ -42,7 +42,7 @@ The command `docker build` takes a directory as input (providing `.` means the c
 As you might remember the second positional argument of `docker run` is a command (i.e. `docker run IMAGE [CMD]`). If you leave it empty, it uses the default command. You can change the default command in the `Dockerfile` with an instruction starting with `CMD`. For example:
 
 ```dockerfile
-FROM ubuntu
+FROM ubuntu:20.04
 RUN apt-get update 
 RUN apt-get install figlet
 CMD figlet My image works!
@@ -111,7 +111,7 @@ You have seen in the output of `docker inspect` that docker translates the comma
 A `Dockerfile` with shell notation:
 
 ```dockerfile
-FROM ubuntu
+FROM ubuntu:20.04
 RUN apt-get update
 RUN apt-get install figlet
 CMD figlet My image works!
@@ -120,7 +120,7 @@ CMD figlet My image works!
 A `Dockerfile` with exec notation:
 
 ```dockerfile
-FROM ubuntu
+FROM ubuntu:20.04
 RUN apt-get update
 RUN apt-get install figlet
 CMD ["/bin/sh", "-c", "figlet My image works!"]
@@ -143,7 +143,7 @@ In the exercises we will use a simple script called `pi.py`. You can download it
 Let's make a simple `Dockerfile` as:
 
 ```dockerfile
-FROM ubuntu
+FROM ubuntu:20.04
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y python3
 
@@ -189,7 +189,7 @@ ENV PATH "/code:$PATH"
 The path variable is a special variable that consists of a list of path seperated by colons (`:`). These paths are searched if you are trying to run an executable. More info this topic at e.g. [wikipedia](https://en.wikipedia.org/wiki/PATH_(variable)).
 
 ```dockerfile
-FROM ubuntu
+FROM ubuntu:20.04
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y python3
 
@@ -209,7 +209,7 @@ docker run --rm pi pi.py 10000
 Now, add your script to the `CMD` instruction, so your script will be executed in the container if the user calls the container without any arguments.
 
 ```dockerfile
-FROM ubuntu
+FROM ubuntu:20.04
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y python3
 

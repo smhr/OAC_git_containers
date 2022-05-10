@@ -140,8 +140,8 @@ organization), the \"name\", and the \"tag\". For example, an image with
 the full name
 
 ``` {.text}
-tacc/gateways19:0.1
+your_docker_username/your_modified_ubuntu:0.1
 ```
 
-would reference the \"gateways19\" image owned by the \"tacc\"
+would reference the \"your_modified_ubuntu\" image owned by \"your_docker_username\"
 organization with a tag of \"0.1\".

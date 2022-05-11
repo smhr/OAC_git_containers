@@ -130,6 +130,9 @@ We didn't specify the tag for our new image. That's why `docker tag` gave it the
 docker tag ubuntu-figlet [USER NAME]/ubuntu-figlet:v0.2
 docker push [USER NAME]/ubuntu-figlet:v0.2
 ```
+This short video show this section in action.
+
+[![asciicast](https://asciinema.org/a/Sw4BQ8SpQHMAXpd9QYrm7B6T6.svg)](https://asciinema.org/a/Sw4BQ8SpQHMAXpd9QYrm7B6T6)
 
 ### Mounting a directory
 

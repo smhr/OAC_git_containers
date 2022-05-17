@@ -168,7 +168,7 @@ $ sudo singularity build pi.sif pi.def
 
 ```
 
-**Exercise** Try to `shell` into, `execute` the `pi.py` and `run` the image, using
+**Exercise:** Try to `shell` into, `execute` the `pi.py` and `run` the image, using
 
 ```console
 $ singularity shell pi.sif
@@ -212,12 +212,16 @@ Bootstrap: docker
 From: debian
 ```
 
+## Building from a local image
+
 You can also build a container from a base container on your local file system.
 
 ```
 Bootstrap: localimage
 From: /home/student/debian.sif
 ```
+
+**Note:**
 
 Each of these methods can also be called _without_ providing a definition file using the following shorthand.  For an added bonus, none of these `build` commands require root privileges.
 

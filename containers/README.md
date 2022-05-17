@@ -93,7 +93,7 @@ Docker and Singularity (Apptainer) platforms (among others) at:
 Some Quick Definitions
 ----------------------
 
-### Dockerfile
+### Dockerfile or Deffile for singularity
 
 A Dockerfile is a recipe for creating a Docker image. It is a
 human-readable, plain text file that contains a sequential set of

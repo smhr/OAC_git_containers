@@ -122,7 +122,9 @@ Let's test it.
 
 ```console
 singularity shell pi-from-dir.sif 
-Singularity>
+```
+
+```
 Singularity> cd /opt
 Singularity> python3 ./pi.py 10000
 ```

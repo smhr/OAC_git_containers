@@ -221,6 +221,7 @@ Bootstrap: localimage
 From: /home/student/debian.sif
 ```
 
+---
 **Note:**
 
 Each of these methods can also be called _without_ providing a definition file using the following shorthand.  For an added bonus, none of these `build` commands require root privileges.

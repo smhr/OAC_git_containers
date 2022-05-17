@@ -115,13 +115,13 @@ Singularity> python3 pi.py 10000
 We could now build an immutable image from our development directory.
 
 ```console
-sudo singularity build pi-from-dir.sif pi
+$ sudo singularity build pi-from-dir.sif pi
 ```
 
 Let's test it.
 
 ```console
-singularity shell pi-from-dir.sif 
+$ singularity shell pi-from-dir.sif 
 ```
 
 ```

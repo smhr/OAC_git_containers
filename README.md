@@ -5,7 +5,7 @@ This repository is created for 3-session mini-workshop on git and containers for
 
 Part of the notes are based on:
 
-[Vontainres @ TACC](https://containers-at-tacc.readthedocs.io/en/latest/index.html)
+[Containres @ TACC](https://containers-at-tacc.readthedocs.io/en/latest/index.html)
 
 [sib Swiss container workshop](https://sib-swiss.github.io/containers-introduction-training/2022.4/)
 
